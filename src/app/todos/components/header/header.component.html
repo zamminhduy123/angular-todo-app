@@ -1,0 +1,11 @@
+<header class="header">
+  <h1>ToDo App</h1>
+  <input
+    class="new-todo"
+    placeholder="Add New Todo?"
+    autoFocus
+    [value]="text"
+    (keyup)="changeText($event)"
+    (keyup.enter)="addTodo()"
+  />
+</header>
